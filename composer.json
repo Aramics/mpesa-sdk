@@ -1,0 +1,26 @@
+{
+    "name": "aramics/mpesa-sdk",
+    "description": "Interact with mpesa api (daraja) with ease",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aramics\\MpesaSdk\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aramics\\MpesaSdk\\MpesaServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Aramics",
+            "email": "aramicrown@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
