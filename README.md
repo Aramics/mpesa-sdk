@@ -318,7 +318,16 @@ Getting phone number for the UI and showing the user payment flow
 
 
 
+
+
+
+```
+
+
+
+
+
 ## Preview
-![screenshot1](https://user-images.githubusercontent.com/29895599/204027287-203e062e-11cb-44e9-b503-6486061bbde3.png)
 ![screenshot2](https://user-images.githubusercontent.com/29895599/204027305-450901c0-4615-4002-ae47-0245619d8c10.png)
+![screenshot1](https://user-images.githubusercontent.com/29895599/204027287-203e062e-11cb-44e9-b503-6486061bbde3.png)
 
