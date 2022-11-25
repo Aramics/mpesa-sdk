@@ -18,9 +18,7 @@ $ composer require aramics/mpesa-sdk
     require mpesa-sdk/src/Mpesa.php
 ```
 
-## Usage
-
-### Backend
+## Backend Usage
 
 ```php
 <?php
@@ -29,17 +27,22 @@ use Aramics\MpesaSdk\Mpesa;
 
 class Payment{
 
-public $this->settings = [
-    'mode' => 'sandbox', //or live
-    'consumer_key' => '',
-    'consumer_secret' => '',
-    'phone_number' =>'', //admin mpesa phone number
-    'short_code' => '',
-    'stk_pass_key' => '', //LIPA stk push password
-    'logger' => 'custom_log', //callback function for logging. Empty to disable error logging.
-];
+public $settings;
+public $mpesa;
 
-__construct(){
+function __construct(){
+
+    //settings
+    $this->settings = [
+        'mode' => 'sandbox', //or live
+        'consumer_key' => '',
+        'consumer_secret' => '',
+        'phone_number' =>'', //admin mpesa phone number
+        'short_code' => '',
+        'stk_pass_key' => '', //LIPA stk push password
+        'logger' => 'custom_log', //callback function for logging. Empty to disable error logging.
+    ];
+
     //Create the instance
     $this->mpesa = new Mpesa($this->settings);
 }
@@ -212,17 +215,9 @@ function callbackNotification() {
 
 ```
 
-```
+## Frontend Usage
 
-```
-
-```
-
-```
-
-### Frontend
-
-Getting phone number for the UI and showing the user payment flow
+### Getting phone number for the UI and showing the user payment flow
 
 ```php
     <?php
@@ -323,11 +318,7 @@ Getting phone number for the UI and showing the user payment flow
 
 ```
 
+## Frontend Preview
 
-
-
-
-## Preview
 ![screenshot2](https://user-images.githubusercontent.com/29895599/204027305-450901c0-4615-4002-ae47-0245619d8c10.png)
 ![screenshot1](https://user-images.githubusercontent.com/29895599/204027287-203e062e-11cb-44e9-b503-6486061bbde3.png)
-
